@@ -19,7 +19,7 @@ RUN poetry install --no-root
 COPY . .
 
 # Exposer le port Flask
-EXPOSE 5000
+EXPOSE 8080
 
 # Lancer l'application
-CMD ["bash", "-c", "flask --app app/mon_api --debug run --host 0.0.0.0"]
+CMD ["bash", "-c", "flask --app app/mon_api --debug run --host 0.0.0.0 -p 8080"]
