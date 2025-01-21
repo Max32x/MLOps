@@ -24,7 +24,7 @@ jobs:
         run: docker build -t flask-api .
 
       - name: Tag the image
-        run: docker tag gender-api europe-docker.pkg.dev/ensai-2025/gender-chat-europe/flask-api
+        run: docker tag flask-api europe-docker.pkg.dev/ensai-2025/gender-chat-europe/flask-api
 
       - name: Authenticate to GCP registry
         run: gcloud auth configure-docker europe-docker.pkg.dev
