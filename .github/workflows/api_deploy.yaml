@@ -41,5 +41,6 @@ jobs:
         gcloud run deploy flask-gender-api-fan2chat-europe-france \
           --image europe-docker.pkg.dev/ensai-2025/gender-chat-europe/flask-api \
           --platform managed \
-          --region europe-west1\
-          --allow-unauthenticated
+          --region europe-west1 \
+          --allow-unauthenticated \
+          --timeout=300s
