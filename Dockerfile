@@ -22,4 +22,4 @@ COPY . .
 EXPOSE 5000
 
 # Lancer l'application
-CMD ["python", "app/mon_api.py"]
+CMD ["bash", "-c", "flask --app app/mon_api --debug run --host 0.0.0.0"]
