@@ -38,8 +38,8 @@ jobs:
       
     - name: Deploy on Cloud Run
       run: |
-        gcloud run deploy flask-gender-api-fan2chat-america-trump \
+        gcloud run deploy flask-gender-api-fan2chat-europe-france \
           --image europe-docker.pkg.dev/ensai-2025/gender-chat-europe/flask-api \
           --platform managed \
-          --region us-central1\
+          --region europe-west1\
           --allow-unauthenticated
