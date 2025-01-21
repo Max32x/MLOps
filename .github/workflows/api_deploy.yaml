@@ -35,9 +35,10 @@ jobs:
     - name: Push Docker image to GCP registry
       run: docker push europe-docker.pkg.dev/ensai-2025/gender-chat-europe/flask-api
 
+      
     - name: Deploy on Cloud Run
       run: |
-        gcloud run deploy flask-api \
+        gcloud run deploy flask-gender-api-fan2chat-europe-france \
           --image europe-docker.pkg.dev/ensai-2025/gender-chat-europe/flask-api \
           --platform managed \
           --region europe-west1 \
